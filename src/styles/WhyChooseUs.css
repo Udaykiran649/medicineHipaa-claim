@@ -332,7 +332,11 @@
   .slider-trackwhy {
     gap: 20px;
   }
-
+ .image-wrapperwhy img {
+    width: 100%;
+    max-width: 400px !important;
+    height: 300px !important;
+  }
   .cardwhy {
     min-width: 50%; /* show 2 cards */
   }
