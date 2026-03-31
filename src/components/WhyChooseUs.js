@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % data.length);
-    }, 3000);
+    }, 4000);
 
     return  () => clearInterval(interval) ;
   }, []);
