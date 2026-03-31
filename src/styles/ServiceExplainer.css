@@ -262,7 +262,9 @@
   .explainer-title {
     font-size: 22px;
   }
-
+    .explainer-section {
+        padding: 30px;
+    }
   .explainer-metric-number {
     font-size: 36px;
   }

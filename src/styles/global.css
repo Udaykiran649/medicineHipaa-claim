@@ -234,6 +234,9 @@ img {
   .section-title {
     font-size: 24px;
   }
+      .section {
+        padding: 30px;
+    }
 }
 
 /* Large Screens (4K / Ultra-wide) */
