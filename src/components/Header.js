@@ -35,11 +35,11 @@ const Header = () => {
             <div className="header-top-item">📞 +1 (800) 555-0199</div>
             <div className="header-top-item">📍 New York, NY</div>
           </div>
-          <div className="header-top-right">
-            <a className="social-icon" href="#" aria-label="Facebook">f</a>
-            <a className="social-icon" href="#" aria-label="Twitter">𝕏</a>
-            <a className="social-icon" href="#" aria-label="LinkedIn">in</a>
-          </div>
+      <div className="header-top-right">
+  <a className="social-icon" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+  <a className="social-icon" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+  <a className="social-icon" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+</div>
         </div>
       </div>
       <div className="header-main">

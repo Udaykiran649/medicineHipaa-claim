@@ -19,12 +19,12 @@ const Footer = () => {
               HIPAA Claims is a trusted medical billing and revenue cycle management partner,
               dedicated to helping healthcare providers maximize revenue while ensuring full compliance.
             </p>
-            <div className="footer-social">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Twitter">𝕏</a>
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Instagram">📷</a>
-            </div>
+           <div className="footer-social">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+</div>
           </div>
           <div className="footer-column">
             <h4>Quick Links</h4>
