@@ -31,7 +31,7 @@ const Header = () => {
       <div className="header-top">
         <div className="header-top-inner">
           <div className="header-top-left">
-            <div className="header-top-item">📧 info@hipaaclaims.com</div>
+            <div className="header-top-item">📧 info@Revno RCM.com</div>
             <div className="header-top-item">📞 +1 (800) 555-0199</div>
             <div className="header-top-item">📍 New York, NY</div>
           </div>
@@ -47,7 +47,7 @@ const Header = () => {
           <Link to="/" className="logo">
             <img src={logo} alt="HIPAA Claims" width={48} height={48} />
             <div className="logo-text">
-              <span className="logo-primary">HIPAA</span>{' '}
+              <span className="logo-primary">Revno RCM</span>{' '}
               <span className="logo-secondary">Claims</span>
             </div>
           </Link>

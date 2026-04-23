@@ -18,10 +18,13 @@ import { Link } from 'react-router-dom'
 //   { icon: '🤝', title: 'Dedicated Support', description: 'A dedicated account manager and support team available to address your needs with 24/7 assistance.' },
 // ];
 const reasons = [
-    "Experienced billing team with 10+ years in healthcare",
-    "Faster claim processing with 98% accuracy rate",
-    "Dedicated account management for every client",
-    "Transparent reporting with real-time dashboards",
+    "Certified medical billers and coders who have 10+ years of experience within their specialty",
+    " Complete RCM services: from patient registration through final payment reconciliation",
+    "Fully encrypted, secure data processing and HIPAA- compliant medical billing processes",
+    "First-pass claim acceptance rate of up to 97%",
+    "Account managers who specialize in your niche",
+    "Real-time dashboards and KPI tracking for transparent reporting",
+    "Fully integrated with all leading EHR and practice management systems",
 ];
 const data = [
   {
@@ -82,7 +85,7 @@ const WhyChooseUs = () => {
             <div className="containers">
                      <div className="section-header">
                       <div className="section-label">Why HIPAA Claims</div>
-          <h2 className="section-title">Why Choose Us</h2>
+          <h2 className="section-title">Why Healthcare Providers Choose Revno RCM</h2>
          <p className="section-subtitle">
            We combine industry expertise with cutting-edge technology to deliver results that matter.
            </p>
@@ -105,12 +108,14 @@ const WhyChooseUs = () => {
                         <span className="tag">Why Choose Us</span>
 
                         <h2>
-                            Your Trusted Partner in Revenue Cycle Management
+                           Trusted Revenue Cycle Management & Medical Billing Services
                         </h2>
 
                         <p className="desc">
-                            We combine deep healthcare expertise with cutting-edge technology to deliver billing solutions that maximize your revenue and minimize administrative burden.
-                        </p>
+                        Revno RCM enables healthcare providers across the United States to recover more revenue, reduce claim 
+                        denials and streamline operations with expert medical billing service.  Whether you are a solo practice,
+                         multi-specialty group, or hospital system our end-to-end revenue cycle management and medical billing 
+                         services  are designed to optimize your healthcare revenue cycle financial performance.                        </p>
 
                         <div className="reasons">
                             {reasons.map((reason, index) => (

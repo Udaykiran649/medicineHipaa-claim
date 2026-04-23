@@ -19,8 +19,8 @@ const About = () => {
     <>
       <Header />
       <PageBanner
-        title="About HIPAA Claims"
-        subtitle="Dedicated to transforming healthcare revenue cycles with expertise, technology, and compliance."
+        title="About Revno RCM — Your Revenue Cycle Management Partner"
+        subtitle="Revno RCM, a medical billing company and trusted HIPAA compliant billing company was born out of our dedicated mission of getting healthcare providers fully in control of their revenue cycle without overplaying on time availability, staff resources, or compliance. If you’re looking to learn more about Revno RCM We know the stress physicians, practice managers, and healthcare administrators experience each day  high stakes payer regulations; ever-changing core back office coding rules; claims denials; getting paid for every encounter."
         currentPage="About Us"
       />
 
@@ -28,22 +28,21 @@ const About = () => {
         <div className="container">
           <div className="about-intro">
             <div className="about-intro-content">
-              <h2>Your Trusted RCM Partner Since 2009</h2>
+              <h2>About Revno RCM — Your Revenue Cycle Management Partner</h2>
               <p>
-                HIPAA Claims was founded with a singular mission: to empower healthcare providers
-                with world-class revenue cycle management services that maximize collections while
-                ensuring complete regulatory compliance.
+              Revno RCM, a medical billing company and trusted HIPAA compliant billing company was born out of our dedicated
+               mission of getting healthcare providers fully in control of their revenue cycle without overplaying on time 
+               availability, staff resources, or compliance.
               </p>
               <p>
-                With over 15 years of experience serving 500+ healthcare organizations across 40+
-                specialties, we've recovered over $50 million in revenue for our clients. Our team
-                of certified medical billers and coders combines deep industry expertise with
-                cutting-edge technology to deliver results that exceed expectations.
+                If you’re looking to learn more about Revno RCM We know the stress physicians, practice managers, and healthcare
+                 administrators experience each day  high stakes payer regulations; ever-changing core back office coding rules;
+                  claims denials; getting paid for every encounter
               </p>
               <p>
-                We understand the challenges healthcare providers face — from complex payer
-                requirements to evolving regulations. That's why we handle every aspect of
-                your revenue cycle, so you can focus on what matters most: patient care.
+                Revno RCM company was specifically developed to address the aforementioned issues. We are a team of healthcare
+                 billing experts we are not vendors; our certified medical billing experts, coders, and compliance experts work 
+                 as an extension of your practice.
               </p>
             </div>
             <div className="about-intro-image">
@@ -64,9 +63,9 @@ const About = () => {
               <div className="mv-card-icon">🎯</div>
               <h3>Our Mission</h3>
               <p>
-                To provide healthcare organizations with transparent, efficient, and compliant
-                revenue cycle management solutions that maximize financial performance and minimize
-                administrative burden.
+                We strive to provide a transparent, data driven and results-oriented revenue cycle management service that 
+                preserves resources so healthcare providers can focus on patient care while we capture every dollar through 
+                for their proud work.
               </p>
             </div>
             <div className="mv-card">
@@ -88,7 +87,37 @@ const About = () => {
             </div>
           </div>
         </div>
+
+            
       </section>
+              <div className="container">
+                      <div className="about-intro-content">
+              <h2 >Our Certifications & Credentials</h2>
+              <p>
+              Our billing and coding team holds certifications in the top industry standards from leading organizations such as
+               AAPC (CPC, CRC, CPMA) and AHIMA (CCS, RHIT). And with each team member receiving regular training on ICD-10 
+               updates, CPT revisions, and RCMS policy changes as well as payer-specific billing guidelines, our healthcare 
+               billing experts are coded appropriately and in compliance.
+              </p>
+             </div>
+                    <div className="about-intro-content">
+              <h2 >Our Commitment to HIPAA Compliance</h2>
+              <p>
+              Patient data security is non-negotiable. Revno RCM is 100% HIPAA-compliant billing company, secure encrypted data
+               transmission, role-based access controls and continuous risk assessments. We document and sign Business Associate
+                Agreements (BAA) with all our clients, and make sure our technology and operational workflows comply with or 
+                exceed HIPAA Privacy and Security Rule requirements.
+              </p>
+             </div>
+                    <div className="about-intro-content">
+              <h2 >Technology & Integrations</h2>
+              <p>
+              Our Synchrony integrations connect seamlessly with Epic, Athenahealth, eClinicalWorks, Kareo, DrChrono, Nexgen and
+               more of the leading EHR and practice management systems. We require little set up time so there is no impact on 
+               your existing workflow.
+              </p>
+             </div>
+            </div>
 
       <section className="section">
         <div className="container">

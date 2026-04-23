@@ -58,37 +58,47 @@ const sliderData = [
 
 const services = [
   {
-    title: "Revenue Cycle Management",
+    title: "Revenue Cycle Management (RCM)",
     desc: "Enhance your financial process with our Revenue Cycle Management solutions. We assist healthcare providers in simplifying billing, minimizing denials, and improving revenue flow.",
     img: img1,
   },
   {
-    title: "Physician Billing Services",
-    desc: "Ensure accurate and timely reimbursements with our Physician Billing Services. We manage claim submissions, minimize denials, and enhance revenue collection for healthcare providers.",
+    title: "Medical Billing Service & Claim Submission",
+    desc: "Ensure accurate and timely reimbursements with our Medical Billing Services. We manage claim submissions, minimize denials, and enhance revenue collection for healthcare providers.",
     img: img2,
     highlight: true,
   },
   {
-    title: "Medical Credentialing",
-    desc: "Streamline provider enrollment and ensure compliance with our Medical Credentialing services. We manage paperwork, verifications, and approvals, allowing you to focus on patient care.",
+    title: " Provider Credentialing",
+    desc: "Streamline provider enrollment and ensure compliance with our  Provider Credentialing services. We manage paperwork, verifications, and approvals, allowing you to focus on patient care.",
     img: img3,
   },
   {
-    title: "Hospital Billing",
+    title: " Denial Management & Appeals",
     desc: "Boost hospital revenue with our streamlined Billing services. We focus on accurate claims, reducing denials, and ensuring quicker reimbursements for smooth operations.",
     img: img4,
   },
   {
-    title: "Revenue Transformation",
+    title: " Medical e Procedure (ICD-10, CPT & HCPCS)",
     desc: "Fuel significant financial growth with our Revenue Transformation services. We optimize billing, reduce revenue leakage, and enhance overall profitability for healthcare providers.",
     img: img5,
     highlight: true,
   },
   {
-    title: "HIPAA Compliance",
+    title: " Insurance Verify and Prior Authorization",
     desc: "Ensure complete HIPAA compliance with our expert services. We help your healthcare organization meet all regulatory requirements to safeguard patient privacy and secure data.",
     img: img6,
   },
+   {
+    title: " Patient statement processing & collections",
+    desc: "Ensure complete HIPAA compliance with our expert services. We help your healthcare organization meet all regulatory requirements to safeguard patient privacy and secure data.",
+    img: img6,
+  },
+   {
+    title: "HIPAA Compliance Consulting",
+    desc: "Ensure complete HIPAA compliance with our expert services. We help your healthcare organization meet all regulatory requirements to safeguard patient privacy and secure data.",
+    img: img6,
+  }
 ];
 const ServicesOverview = () => {
      const [start, setStart] = useState(0);
@@ -129,10 +139,10 @@ const ServicesOverview = () => {
       <div className="services-header">
         <div className="section-label">What We Offer</div><br/>
         <div className="badge">
-          <span>💙</span> Our Services
+          <span>💙</span> Our Core Services
         </div>
 
-        <h2>Our Medical Billing and Coding Services</h2>
+        <h2>Our Revno RCM redefines a full range of healthcare revenue cycle services such as</h2>
       </div>
 
       <div className="services-grid">
