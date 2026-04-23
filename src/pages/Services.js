@@ -18,41 +18,49 @@ const services = [
     title: "Credentialing & Enrolment Services",
     desc: "Credentialing is one of the biggest bottlenecks in healthcare and one of the most overlooked.",
     img: img1,
+    route: "/provider-credentialing",
   },
   {
     title: "Eligibility & Benefits Verification Services",
     desc: "Eligibility issues are one of the top reasons claims get denied. At Rapid RCM Solutions, we verify patient insurance",
     img: img2,
+    route: "/medical-billing-services",
   },
   {
     title: "Medical Coding Services",
     desc: "Incorrect or inconsistent coding can cost you thousands. At Rapid RCM Solutions, our certified medical coders handle everything.",
     img: img3,
+    route: "/medical-coding",
   },
   {
     title: "Charges Entry Services",
     desc: "One wrong code, one missed modifier, and you're facing denials. At Rapid RCM Solutions, we ensure every charge is entered accurately,",
     img: img4,
+    route: "/medical-billing-services",
   },
   {
     title: "Payment Posting Services",
     desc: "Accurate payment posting is more than just data entry—it’s the foundation of your revenue cycle. At Rapid RCM Solutions",
     img: img5,
+    route: "/medical-billing-services",
   },
   {
     title: "AR & Denial Management Services",
     desc: "Delayed payments, denied claims, and aging AR are signs of deeper billing problems. At Rapid RCM Solutions..",
     img: img6,
+    route: "/denial-management",
   },
   {
-    title: "Virtual Administrative Assistant Services",
+    title: "hipaa-compliance Services",
     desc: "Managing a healthcare practice means endless tasks: scheduling, paperwork, phone calls, and all the behind-the-scenes work..",
     img: img7,
+    route: "/hipaa-compliance",
   },
   {
     title: "Reporting Services",
     desc: "Without clear reports, running your practice can feel like driving in the dark. You’re moving, but you don’t know your real progress..",
     img: img8,
+    route: "/services",
   },
 ];
 
@@ -61,8 +69,8 @@ const Services = () => {
     <>
       <Header />
       <PageBanner
-        title="Our Services"
-        subtitle="Comprehensive revenue cycle management solutions tailored to your practice's unique needs."
+        title="End-to-End Revenue Cycle Management (RCM) Services"
+        subtitle="In today's world of healthcare RCM solutions are more complex than ever! Provider margins are being squeezed by a multitude of factors including rising claim denial rates, changing payer policies, increasing patient financial responsibility and tightening compliance"
         currentPage="Services"
       />
 
@@ -81,9 +89,7 @@ const Services = () => {
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
 
-                <Link to="/services" className="link"> View More →</Link>
-                
-                
+                <Link to={item.route} className="link">View More →</Link>
               </div>
 
             </div>

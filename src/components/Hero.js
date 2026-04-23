@@ -11,13 +11,15 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="hero-text">
-          <div className="hero-badge">🛡️ HIPAA Compliant RCM Solutions</div>
+          <div className="hero-badge">🛡️ Revno RCM Solutions</div>
           <h1 className="hero-title">
-            Maximize Your <span>Revenue</span> With Expert Medical Billing
+          Trusted <span >Revenue Cycle Management </span> & Medical Billing Services
           </h1>
           <p className="hero-description">
-            End-to-end Revenue Cycle Management services that reduce denials by up to 95%,
-            accelerate payments, and let you focus on patient care. Trusted by 500+ healthcare providers nationwide.
+            Revno RCM enables healthcare providers across the United States to recover more revenue, reduce claim denials and
+             streamline operations with expert medical billing service.  Whether you are a solo practice, multi-specialty group,
+              or hospital system our end-to-end revenue cycle management and medical billing services  are designed to optimize 
+              your healthcare revenue cycle financial performance.
           </p>
           <div className="hero-buttons">
             <Link to="/contact" className="btn btn-primary">Get Free Audit →</Link>

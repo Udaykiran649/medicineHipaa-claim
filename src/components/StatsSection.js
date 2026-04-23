@@ -33,14 +33,17 @@ const StatsSection = () => {
           </div>
 
           <div className="right">
-            <p className="tag">Specialities we serve</p>
+            <p className="tag">Industries & Specialties We Serve</p>
             <div className="underline"></div>
 
             <h2>Expertise Across 25+ Specialties</h2>
 
             <p className="desc">
-              At Hipaa-Claims RCM Solutions, we’re proud to support over 25 medical specialties with
-              customized billing services. We design our approach to meet the unique challenges of each field.
+              With a focus on delivering advanced RCM services and medical billing services for diverse specialties including but
+               not limited to family medicine, internal medicine, cardiology, orthopedics, behavioral health, physical therapy,
+                urgent care, home health and more. Not only do our expert coders individually submit your claims, but we also 
+                have specialist coding teams who understand the unique coding requirements, payer rules and compliance intricacies
+                 for each specialty.
             </p>
 
             <ul>

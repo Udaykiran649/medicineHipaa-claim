@@ -7,6 +7,11 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import MedicalBillingPage from "./pages/MedicalBillingPage";
+import MedicalCodingPage from "./pages/MedicalCodingPage";
+import HipaaPage from "./pages/HipaaPage";
+import ProviderCredentialing from "./pages/ProviderCredentialing";
+import DenialManagement from "./pages/DenialManagement";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +24,11 @@ const App = () => (
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+         <Route path="/medical-billing-services" element={<MedicalBillingPage />} />
+         <Route path="/medical-coding" element={< MedicalCodingPage/>} />
+         <Route path="/hipaa-compliance" element={<HipaaPage/>} />
+         <Route path="/provider-credentialing" element={<ProviderCredentialing/>} />
+         <Route path="/denial-management" element={<DenialManagement/>} />
       </Routes>
     </BrowserRouter>
   </QueryClientProvider>
