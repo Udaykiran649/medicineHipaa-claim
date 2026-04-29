@@ -57,7 +57,7 @@ export default function Billing() {
 
               <p
                 style={{
-                  fontSize: "15px",
+                  fontSize: "14px",
                   color: "var(--gray)",
                   lineHeight: 1.85,
                   marginBottom: "20px",

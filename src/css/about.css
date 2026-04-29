@@ -1,7 +1,7 @@
 .about-intro-card {
   display: grid;
   grid-template-columns: 1.4fr .8fr;
-  gap: 34px;
+  gap: 32px;
   align-items: center;
   background: #fff;
   border-radius: 26px;
