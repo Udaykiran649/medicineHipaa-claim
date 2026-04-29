@@ -1,0 +1,345 @@
+.denial-section {
+  padding: 76px 0;
+}
+
+.denial-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.denial-content {
+  max-width: 620px;
+}
+
+.denial-content p {
+  font-size: 15.5px;
+  color: var(--gray);
+  line-height: 1.9;
+  margin: 0 0 16px;
+}
+
+.denial-visual-panel {
+  min-height: 330px;
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at top right, rgba(10, 181, 200, 0.35), transparent 36%),
+    linear-gradient(135deg, #10285c, #0c4f91);
+  box-shadow: 0 26px 70px rgba(15, 50, 105, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.denial-svg-wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.denial-main-svg {
+  width: 250px;
+  height: 250px;
+  max-width: 90%;
+}
+
+.denial-ring {
+  fill: rgba(239, 68, 68, 0.08);
+  stroke: rgba(10, 181, 200, 0.24);
+  stroke-width: 2;
+}
+
+.denial-orbit {
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 2;
+  stroke-dasharray: 8 12;
+  animation: denialRotate 9s linear infinite;
+  transform-origin: center;
+}
+
+.denial-doc {
+  fill: rgba(255, 255, 255, 0.12);
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-width: 2;
+  animation: denialFloat 2.6s ease-in-out infinite alternate;
+}
+
+.denial-line-main {
+  fill: rgba(10, 181, 200, 0.82);
+}
+
+.denial-line {
+  fill: rgba(255, 255, 255, 0.48);
+}
+
+.denial-line.light {
+  fill: rgba(255, 255, 255, 0.34);
+}
+
+.denial-recover-bg {
+  fill: rgba(16, 185, 129, 0.24);
+  stroke: rgba(16, 185, 129, 0.72);
+  stroke-width: 2;
+  animation: denialPulse 1.8s ease-in-out infinite;
+}
+
+.denial-check {
+  stroke: #86efac;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.denial-node {
+  animation: denialPulse 2s ease-in-out infinite;
+}
+
+.node-one {
+  fill: rgba(10, 181, 200, 0.34);
+}
+
+.node-two {
+  fill: rgba(239, 68, 68, 0.36);
+}
+
+.node-three {
+  fill: rgba(16, 185, 129, 0.32);
+}
+
+.denial-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.denial-tags span {
+  background: rgba(10, 181, 200, 0.15);
+  border: 1px solid rgba(10, 181, 200, 0.35);
+  color: #6ee7df;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 13px;
+  border-radius: 20px;
+}
+
+.denial-connection {
+  stroke: rgba(110, 231, 223, 0.65);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 7 9;
+  animation: denialDash 2.4s linear infinite;
+}
+
+.denial-axis {
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 2;
+}
+
+.denial-bar {
+  animation: denialFloat 2.8s ease-in-out infinite alternate;
+}
+
+.bar-danger {
+  fill: rgba(239, 68, 68, 0.38);
+}
+
+.bar-mid {
+  fill: rgba(245, 158, 11, 0.36);
+}
+
+.bar-safe {
+  fill: rgba(16, 185, 129, 0.36);
+}
+
+.denial-down {
+  stroke: #6ee7df;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.denial-stroke {
+  stroke: rgba(10, 181, 200, 0.85);
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.soft-stroke {
+  stroke: rgba(255, 255, 255, 0.42);
+  stroke-width: 7;
+}
+
+.denial-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.denial-feature-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 26px 24px;
+  border: 1px solid rgba(18, 37, 92, 0.08);
+  box-shadow: 0 18px 45px rgba(20, 60, 120, 0.08);
+  transition: 0.3s ease;
+  text-align: center;
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.denial-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 70px rgba(20, 60, 120, 0.14);
+}
+
+.denial-feature-card span {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(135deg, #126ee8, #08bcc8);
+  margin: 0 auto 16px;
+  box-shadow: 0 12px 26px rgba(8, 188, 200, 0.25);
+}
+
+.denial-feature-card p {
+  margin: 0;
+  color: #12255c;
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 800;
+}
+
+.denial-benefits {
+  display: grid;
+  gap: 16px;
+  margin-top: 34px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.denial-benefit {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(18, 37, 92, 0.08);
+  box-shadow: 0 14px 35px rgba(20, 60, 120, 0.07);
+}
+
+.denial-benefit strong {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e9fbff;
+  color: #08a9bf;
+  font-weight: 900;
+}
+
+.denial-benefit p {
+  margin: 0;
+  color: var(--gray);
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+@keyframes denialRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes denialFloat {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes denialPulse {
+  0%,
+  100% {
+    opacity: 0.62;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes denialDash {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+@media (max-width: 1024px) {
+  .denial-two-col {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .denial-content {
+    max-width: 100%;
+  }
+
+  .denial-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .denial-section {
+    padding: 52px 0;
+  }
+
+  .denial-visual-panel {
+    min-height: 280px;
+    border-radius: 22px;
+  }
+
+  .denial-main-svg {
+    width: 220px;
+    height: 220px;
+  }
+
+  .denial-feature-card {
+    min-height: auto;
+    padding: 24px 18px;
+  }
+
+  .denial-benefit {
+    padding: 18px;
+  }
+}

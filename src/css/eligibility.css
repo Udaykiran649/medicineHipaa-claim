@@ -1,0 +1,322 @@
+.elig-section {
+  padding: 76px 0;
+}
+
+.elig-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.elig-content {
+  max-width: 620px;
+}
+
+.elig-content p {
+  font-size: 15.5px;
+  color: var(--gray);
+  line-height: 1.9;
+  margin: 0 0 16px;
+}
+
+.elig-visual-panel {
+  min-height: 330px;
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at top right, rgba(10, 181, 200, 0.35), transparent 36%),
+    linear-gradient(135deg, #10285c, #0c4f91);
+  box-shadow: 0 26px 70px rgba(15, 50, 105, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.elig-svg-wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.elig-main-svg {
+  width: 250px;
+  height: 250px;
+  max-width: 90%;
+}
+
+.elig-doc {
+  fill: rgba(255, 255, 255, 0.12);
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-width: 2;
+  animation: eligFloat 2.6s ease-in-out infinite alternate;
+}
+
+.elig-line-main {
+  fill: rgba(10, 181, 200, 0.82);
+}
+
+.elig-line {
+  fill: rgba(255, 255, 255, 0.48);
+}
+
+.elig-line.light {
+  fill: rgba(255, 255, 255, 0.34);
+}
+
+.elig-line.soft {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.elig-scan {
+  fill: #6ee7df;
+  animation: eligScan 2.4s ease-in-out infinite;
+}
+
+.elig-check-bg {
+  fill: rgba(16, 185, 129, 0.24);
+  stroke: rgba(16, 185, 129, 0.72);
+  stroke-width: 2;
+  animation: eligPulse 1.8s ease-in-out infinite;
+}
+
+.elig-check {
+  stroke: #86efac;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.elig-node {
+  animation: eligPulse 2s ease-in-out infinite;
+}
+
+.node-one {
+  fill: rgba(10, 181, 200, 0.34);
+}
+
+.node-two {
+  fill: rgba(147, 197, 253, 0.32);
+}
+
+.node-three {
+  fill: rgba(216, 180, 254, 0.32);
+}
+
+.elig-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.elig-tags span {
+  background: rgba(10, 181, 200, 0.15);
+  border: 1px solid rgba(10, 181, 200, 0.35);
+  color: #6ee7df;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 13px;
+  border-radius: 20px;
+}
+
+.eligibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.eligibility-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 26px 24px;
+  border: 1px solid rgba(18, 37, 92, 0.08);
+  box-shadow: 0 18px 45px rgba(20, 60, 120, 0.08);
+  transition: 0.3s ease;
+  text-align: center;
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eligibility-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 70px rgba(20, 60, 120, 0.14);
+}
+
+.eligibility-card span {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(135deg, #126ee8, #08bcc8);
+  margin: 0 auto 16px;
+  box-shadow: 0 12px 26px rgba(8, 188, 200, 0.25);
+}
+
+.eligibility-card p {
+  margin: 0;
+  color: #12255c;
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 800;
+}
+
+.elig-axis {
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 2;
+}
+
+.elig-bar {
+  animation: eligFloat 2.8s ease-in-out infinite alternate;
+}
+
+.bar-one {
+  fill: rgba(10, 181, 200, 0.36);
+}
+
+.bar-two {
+  fill: rgba(16, 185, 129, 0.34);
+}
+
+.bar-three {
+  fill: rgba(147, 197, 253, 0.34);
+}
+
+.elig-growth {
+  stroke: #6ee7df;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.eligibility-benefits {
+  display: grid;
+  gap: 16px;
+  margin-top: 34px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eligibility-benefit {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(18, 37, 92, 0.08);
+  box-shadow: 0 14px 35px rgba(20, 60, 120, 0.07);
+}
+
+.eligibility-benefit strong {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e9fbff;
+  color: #08a9bf;
+  font-weight: 900;
+}
+
+.eligibility-benefit p {
+  margin: 0;
+  color: var(--gray);
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+@keyframes eligFloat {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes eligPulse {
+  0%,
+  100% {
+    opacity: 0.62;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes eligScan {
+  0% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateY(98px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 1024px) {
+  .elig-two-col {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .elig-content {
+    max-width: 100%;
+  }
+
+  .eligibility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .elig-section {
+    padding: 52px 0;
+  }
+
+  .elig-visual-panel {
+    min-height: 280px;
+    border-radius: 22px;
+  }
+
+  .elig-main-svg {
+    width: 220px;
+    height: 220px;
+  }
+
+  .eligibility-card {
+    min-height: auto;
+    padding: 24px 18px;
+  }
+
+  .eligibility-benefit {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,571 @@
+/* HERO LEFT ATTRACTIVE */
+.hero-content {
+  position: relative;
+  padding: 18px 0;
+}
+
+.hero-content::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 78px;
+  width: 7px;
+  height: 160px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #08c6d8, #126ee8);
+  box-shadow: 0 0 28px rgba(8, 198, 216, 0.35);
+}
+
+.hero-content h1 {
+  letter-spacing: -1.4px;
+}
+
+/* FORM */
+.hero-form-wrap {
+  background: #173268;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 24px;
+  padding: 26px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 22px 55px rgba(13, 42, 95, .22);
+}
+
+.audit-form label {
+  display: block;
+  color: #dbe7ff;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 12px 0 7px;
+}
+
+.audit-form input,
+.audit-form select,
+.audit-form textarea {
+  width: 100%;
+  background: rgba(255,255,255,.11);
+  border: 1px solid rgba(255,255,255,.22);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  outline: none;
+}
+
+.audit-form input::placeholder,
+.audit-form textarea::placeholder {
+  color: rgba(255,255,255,.42);
+}
+
+.audit-form select option {
+  background: #19346c;
+  color: #fff;
+}
+
+.audit-form textarea {
+  min-height: 82px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.audit-form button {
+  width: 100%;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 9px;
+  padding: 15px;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  background: linear-gradient(90deg, #126ee8, #08bcc8);
+}
+
+/* NEW RESPONSIVE COUNT-UP STATS */
+.animated-stats-section {
+  position: relative;
+  overflow: hidden;
+  padding: 72px 20px;
+  background:
+    radial-gradient(circle at 95% 5%, rgba(16,191,211,.18), transparent 28%),
+    radial-gradient(circle at 5% 100%, rgba(18,110,232,.13), transparent 24%),
+    linear-gradient(135deg, #082440 0%, #0c2d50 48%, #09213b 100%);
+}
+
+.animated-stats-section::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgba(16, 191, 211, 0.08);
+  animation: statOrbOne 5s ease-in-out infinite alternate;
+}
+
+.animated-stats-section::after {
+  content: "";
+  position: absolute;
+  left: -150px;
+  bottom: -160px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: rgba(18, 110, 232, 0.09);
+  animation: statOrbTwo 6s ease-in-out infinite alternate;
+}
+
+.animated-stats-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.animated-stat-card {
+  min-height: 175px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .055);
+  border: 1px solid rgba(255, 255, 255, .12);
+  box-shadow: 0 18px 50px rgba(0,0,0,.12), inset 0 1px 0 rgba(255,255,255,.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: autoFloat 2.8s ease-in-out infinite alternate;
+  text-align: center;
+  padding: 24px 15px;
+}
+
+.animated-stat-card h3 {
+  margin: 0 0 14px;
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1;
+  font-weight: 900;
+  color: #16c0d6;
+  letter-spacing: -1px;
+}
+
+.animated-stat-card p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(255,255,255,.76);
+}
+
+/* SERVICE SECTION */
+.service-bg-grid {
+  background:
+    linear-gradient(rgba(235,244,255,.9), rgba(235,252,255,.9)),
+    linear-gradient(90deg, rgba(15,76,160,.08) 1px, transparent 1px),
+    linear-gradient(rgba(15,76,160,.08) 1px, transparent 1px);
+  background-size: auto, 40px 40px, 40px 40px;
+}
+
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 45px;
+}
+
+.service-card-full {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  min-height: 215px;
+  box-shadow: 0 18px 45px rgba(20,60,120,.08);
+  cursor: pointer;
+  transition: .3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card-full:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(20,60,120,.15);
+}
+
+.service-card-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 14px;
+  background: #eaf7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.service-card-icon img {
+  width: 60px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+.service-card-full h3 {
+  font-size: 16px;
+  color: #122044;
+  margin-bottom: 12px;
+}
+
+.service-card-full p {
+  color: #506999;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.service-card-full button {
+  margin-top: auto;
+  border: 0;
+  background: transparent;
+  color: #075db4;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes autoFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes statOrbOne {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(-28px, 32px) scale(1.08);
+  }
+}
+
+@keyframes statOrbTwo {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(24px, -20px) scale(1.06);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .animated-stats-grid,
+  .service-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-content::before {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .form-row,
+  .animated-stats-grid,
+  .service-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-form-wrap {
+    max-width: 100%;
+    padding: 22px;
+  }
+
+  .animated-stats-section {
+    padding: 48px 15px;
+  }
+
+  .animated-stat-card {
+    min-height: 145px;
+  }
+
+  .animated-stat-card h3 {
+    font-size: 42px;
+  }
+}
+/* ===============================
+   Animated Home SVG Sections
+================================ */
+
+.rcm-running-svg,
+.specialty-running-svg {
+  width: 100%;
+  max-width: 390px;
+  overflow: visible;
+}
+
+.rcm-pulse {
+  fill: none;
+  stroke: rgba(10, 181, 200, 0.18);
+  stroke-width: 2;
+  transform-origin: center;
+  animation: rcmPulse 2.8s ease-in-out infinite;
+}
+
+.rcm-pulse-2 {
+  animation-delay: 0.7s;
+}
+
+.rcm-orbit {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.13);
+  stroke-width: 2;
+  stroke-dasharray: 8 10;
+  transform-origin: center;
+  animation: spinOrbit 12s linear infinite;
+}
+
+.rcm-hospital {
+  animation: floatMain 3.6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.rcm-hospital rect,
+.rcm-hospital path {
+  fill: rgba(255, 255, 255, 0.13);
+  stroke: rgba(255, 255, 255, 0.35);
+  stroke-width: 2;
+}
+
+.rcm-hospital rect:nth-of-type(4),
+.rcm-hospital rect:nth-of-type(5) {
+  fill: url(#rcmGlow);
+  stroke: none;
+}
+
+.rcm-coin {
+  animation: coinFloat 3s ease-in-out infinite;
+}
+
+.rcm-coin circle {
+  fill: rgba(255, 193, 7, 0.18);
+  stroke: rgba(255, 193, 7, 0.8);
+  stroke-width: 2;
+}
+
+.rcm-coin text {
+  fill: #facc15;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.rcm-heart-line {
+  fill: none;
+  stroke: url(#rcmGlow);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: drawLine 3s ease-in-out infinite;
+}
+
+.rcm-floating-card rect {
+  fill: rgba(255, 255, 255, 0.1);
+  stroke: rgba(10, 181, 200, 0.45);
+}
+
+.rcm-floating-card text {
+  fill: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.card-one {
+  animation: floatCard 3.4s ease-in-out infinite;
+}
+
+.card-two {
+  animation: floatCard 3.4s ease-in-out infinite reverse;
+}
+
+/* Specialties SVG */
+.sp-ring {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 2;
+  stroke-dasharray: 7 9;
+  transform-origin: center;
+}
+
+.sp-ring-1 {
+  animation: spinOrbit 14s linear infinite;
+}
+
+.sp-ring-2 {
+  animation: spinOrbitReverse 10s linear infinite;
+}
+
+.sp-core {
+  fill: rgba(10, 181, 200, 0.18);
+  stroke: rgba(10, 181, 200, 0.7);
+  stroke-width: 3;
+  animation: corePulse 2.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.sp-main-text {
+  fill: #ffffff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.sp-sub-text {
+  fill: rgba(255, 255, 255, 0.85);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sp-chip {
+  animation: chipFloat 3s ease-in-out infinite;
+}
+
+.sp-chip-2,
+.sp-chip-5 {
+  animation-delay: 0.4s;
+}
+
+.sp-chip-3,
+.sp-chip-6 {
+  animation-delay: 0.8s;
+}
+
+.sp-chip rect {
+  fill: rgba(255, 255, 255, 0.1);
+  stroke: rgba(10, 181, 200, 0.45);
+  stroke-width: 1.4;
+}
+
+.sp-chip text {
+  fill: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.sp-dash-path {
+  fill: none;
+  stroke: url(#specialtyGrad);
+  stroke-width: 2;
+  stroke-dasharray: 10 12;
+  animation: dashMove 1.8s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes rcmPulse {
+  0%,
+  100% {
+    transform: scale(0.92);
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes spinOrbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinOrbitReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes floatMain {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes coinFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-12px) scale(1.06);
+  }
+}
+
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: 420;
+  }
+
+  55% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -420;
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes corePulse {
+  0%,
+  100% {
+    transform: scale(0.96);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes chipFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: -44;
+  }
+}
