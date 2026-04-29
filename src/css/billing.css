@@ -1,0 +1,209 @@
+.billing-running-svg {
+  width: 100%;
+  max-width: 390px;
+  overflow: visible;
+}
+
+.bill-pulse {
+  fill: none;
+  stroke: rgba(10, 181, 200, 0.16);
+  stroke-width: 2;
+  transform-origin: center;
+  animation: billPulse 3s ease-in-out infinite;
+}
+
+.bill-pulse-two {
+  animation-delay: 0.7s;
+}
+
+.bill-claim-card {
+  animation: billFloat 3.4s ease-in-out infinite;
+}
+
+.bill-claim-card rect:first-child {
+  fill: rgba(255, 255, 255, 0.12);
+  stroke: rgba(255, 255, 255, 0.32);
+  stroke-width: 2;
+}
+
+.bill-card-head {
+  fill: rgba(10, 181, 200, 0.35);
+}
+
+.bill-head-text {
+  fill: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.bill-line-soft {
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 2;
+}
+
+.bill-label {
+  fill: rgba(255, 255, 255, 0.65);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.bill-value {
+  fill: #ffffff;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.bill-clean-stamp {
+  animation: stampPop 2.4s ease-in-out infinite;
+  transform-origin: 258px 120px;
+}
+
+.bill-clean-stamp circle {
+  fill: rgba(16, 185, 129, 0.17);
+  stroke: rgba(16, 185, 129, 0.7);
+  stroke-width: 3;
+}
+
+.bill-clean-stamp text {
+  fill: #6ee7b7;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.bill-flow-line {
+  fill: none;
+  stroke: url(#billingGrad);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 390;
+  stroke-dashoffset: 390;
+  animation: billDrawLine 3s ease-in-out infinite;
+}
+
+.bill-payer {
+  animation: payerFloat 3s ease-in-out infinite;
+}
+
+.bill-payer-2 {
+  animation-delay: 0.3s;
+}
+
+.bill-payer-3 {
+  animation-delay: 0.6s;
+}
+
+.bill-payer rect {
+  fill: rgba(255, 255, 255, 0.09);
+  stroke: rgba(10, 181, 200, 0.4);
+  stroke-width: 1.4;
+}
+
+.bill-payer text {
+  fill: rgba(255, 255, 255, 0.85);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.bill-reimburse {
+  animation: reimburseGlow 2.4s ease-in-out infinite;
+}
+
+.bill-reimburse rect {
+  fill: rgba(250, 204, 21, 0.14);
+  stroke: rgba(250, 204, 21, 0.65);
+  stroke-width: 2;
+}
+
+.bill-reimburse text {
+  fill: #facc15;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.bill-dollar {
+  animation: dollarFloat 3s ease-in-out infinite;
+}
+
+.bill-dollar-two {
+  animation-delay: 0.6s;
+}
+
+.bill-dollar circle {
+  fill: rgba(250, 204, 21, 0.17);
+  stroke: rgba(250, 204, 21, 0.75);
+  stroke-width: 2;
+}
+
+.bill-dollar text {
+  fill: #facc15;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+@keyframes billPulse {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes billFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes stampPop {
+  0%, 100% {
+    transform: scale(0.94);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes billDrawLine {
+  0% {
+    stroke-dashoffset: 390;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -390;
+  }
+}
+
+@keyframes payerFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes reimburseGlow {
+  0%, 100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes dollarFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.08);
+  }
+}
