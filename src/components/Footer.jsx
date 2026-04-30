@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import "../css/Footer.css";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTelegramPlane,
+  FaTwitter,
+  FaYoutube,
+ 
+ 
+} from 'react-icons/fa';
 
+// import { FaXTwitter } from 'react-icons/fa6';
 export default function Footer() {
   const services = [
     ["/rcm-services", "RCM Services"],
@@ -93,7 +104,29 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+<div className="footer-social">
+    <a href="https://www.youtube.com/@Revnorcm" target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
+              </a>
+                <a href="https://t.me/revnorcm" target="_blank" rel="noopener noreferrer">
+                <FaTelegramPlane />
+              </a>
+    <a href="https://www.facebook.com/revnorcm/" target="_blank" rel="noopener noreferrer">
+                <FaFacebookF />
+              </a>
 
+              <a href="https://x.com/revnorcm" target="_blank" rel="noopener noreferrer">
+                <FaTwitter/>
+              </a>
+
+              <a href="https://www.linkedin.com/company/revnorcm" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn />
+              </a>
+
+              <a href="https://www.instagram.com/revnorcm/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+</div>
           <div className="fcol contact-col">
             <h4>Contact</h4>
             <p>Need help with billing, denials, coding, or credentialing?</p>
