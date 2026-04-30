@@ -286,3 +286,31 @@
     align-items: flex-start;
   }
 }
+.footer-social {
+  position: absolute;
+  right: 0;
+  bottom: 90px; /* 👈 key: places it ABOVE footer-bot (like your red mark) */
+  display: flex;
+  gap: 12px;
+  z-index: 3;
+}
+
+.footer-social a {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(10, 181, 200, 0.12);
+  border: 1px solid rgba(10, 181, 200, 0.3);
+  color: #8eeeff;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: linear-gradient(135deg, #0ab5c8, #0784a7);
+  color: #fff;
+  transform: translateY(-3px);
+}
